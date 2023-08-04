@@ -4,7 +4,7 @@ user_has_liked_post = True
 if user_has_liked_post:
     like_icon = 'red_heart.jpg'
 else:
-    like_icon = 'heat_outline.jpg'
+    like_icon = 'heart_outline.jpg'
 
 
 # Generate like message for a post
@@ -25,6 +25,8 @@ print(message)
 
 # or we could do this,
 
+likes = 1
+
 if likes == 0:  # the post has no likes
     message = 'Be the first to like this'
 elif likes == 1:  # handle the case with exactly 1 like to use singular 'like'
@@ -39,14 +41,14 @@ print(message)
 
 # Generate button text
 
-following = True
+following = True   # boolean variable
 
 if following:
     button_message = 'Following'
-    button_color = 'blue'
-else:
+    button_color = 'gray'
+else:  # not following this account
     button_message = 'Follow'
-    button_color = 'white'
+    button_color = 'blue'
 
 
 comment_text = ''
