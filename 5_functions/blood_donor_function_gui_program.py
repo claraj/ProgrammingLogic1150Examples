@@ -1,7 +1,7 @@
 import tkinter
 from tkinter import messagebox
 
-# to donate blood, you must be 17 or older, and weight must be 110 lbs or greater.
+# to donate blood, you must be 16 or older, and weight must be 110 lbs or greater.
 # A graphical user interface program.
 
 
@@ -71,7 +71,7 @@ def validate_number_in_range(string, min, max):
 
 # The same function from the previous program!
 def check_donor_eligibility(age, weight):
-    if age >= 17 and weight >= 110:
+    if age >= 16 and weight >= 110:
         return True  # indicates yes, user is eligible
     else:
         return False  # indicates no, not eligible
