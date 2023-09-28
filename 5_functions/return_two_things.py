@@ -13,7 +13,7 @@ def main():
 
 
 def can_donate_blood(weight, age):
-    if age < 17:
+    if age < 16:
         problem = 'you are not old enough, must be at least 17'
         return False, problem
 
